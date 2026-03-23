@@ -46,17 +46,33 @@ public class EventUI : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    public void CycleObject() 
+    public void CycleObject(int direccion) 
     {
-        currentIndex = (currentIndex + 1) % listaInstrucciones.Count;
+        currentIndex = (currentIndex + direccion + listaInstrucciones.Count) % listaInstrucciones.Count;
 
         UpdateVisibility();
     }
 
     private void UpdateText() 
     {
-        if ()
+        if (cadenasInstrucciones.Count > 0 && textMeshProUGUI != null)
+        {
+            textMeshProUGUI.text = cadenasInstrucciones[currentIndex];
+        }
     } 
+
+    public void CycleText(int direction) 
+    {
+        currentIndex = (currentIndex + direction + cadenasInstrucciones.Count) % cadenasInstrucciones.Count;
+        UpdateText();
+    }
+
+    public void ReloadCurrentScene()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
+    }
+
     public void ExitGame()
     {
         Debug.Log("Va a salir");

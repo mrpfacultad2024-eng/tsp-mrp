@@ -341,8 +341,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1995448676}
         m_TargetAssemblyTypeName: EventUI, Assembly-CSharp
-        m_MethodName: ChangeSceneByIndex
-        m_Mode: 3
+        m_MethodName: ReloadCurrentScene
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -546,12 +546,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1995448676}
         m_TargetAssemblyTypeName: EventUI, Assembly-CSharp
-        m_MethodName: CycleObject
-        m_Mode: 1
+        m_MethodName: CycleText
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1110,7 +1110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &439760093
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7246,7 +7246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &991850803
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7364,12 +7364,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1995448676}
         m_TargetAssemblyTypeName: EventUI, Assembly-CSharp
-        m_MethodName: CycleObject
-        m_Mode: 1
+        m_MethodName: CycleText
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: -1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7522,7 +7522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1319905405
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7997,7 +7997,7 @@ GameObject:
   - component: {fileID: 1752737707}
   - component: {fileID: 1752737706}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Text (TMP) 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8277,6 +8277,13 @@ MonoBehaviour:
   - {fileID: 991850802}
   - {fileID: 1319905404}
   currentIndex: 0
+  cadenasInstrucciones:
+  - hola
+  - hola1
+  - 22
+  - 21221
+  - 212121212
+  textMeshProUGUI: {fileID: 1752737706}
 --- !u!4 &1995448677
 Transform:
   m_ObjectHideFlags: 0
