@@ -854,6 +854,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6545252975668709015, guid: e8b14dde53114d242b5dcad7698a44a7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 868524433}
+    - targetCorrespondingSourceObject: {fileID: 6545252975668709015, guid: e8b14dde53114d242b5dcad7698a44a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 868524434}
+    - targetCorrespondingSourceObject: {fileID: 6545252975668709015, guid: e8b14dde53114d242b5dcad7698a44a7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 868524435}
   m_SourcePrefab: {fileID: 100100000, guid: e8b14dde53114d242b5dcad7698a44a7, type: 3}
 --- !u!1 &868524427 stripped
 GameObject:
@@ -967,7 +973,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 868524427}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed483ea496ad9904193a3c7477d61c2b, type: 3}
   m_Name: 
@@ -977,6 +983,44 @@ MonoBehaviour:
   cameraTransform: {fileID: 999406711}
   movementInput: {x: 0, y: 0}
   turbulenceIterations: 1000000
+--- !u!114 &868524434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868524427}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 616030e4d10e8f14f9d9f2116d6540ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  rotationSpeed: 100
+  cameraTransform: {fileID: 999406711}
+  movementInput: {x: 0, y: 0}
+  turbulenceIterations: 1000000
+  read: 0
+  write: 0
+--- !u!114 &868524435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868524427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0ace7c66a1d05b4b99c4da7ebc2b5e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  rotationSpeed: 100
+  cameraTransform: {fileID: 999406711}
+  movementInput: {x: 0, y: 0}
+  turbulenceIterations: 1000000
+  read: 0
+  write: 0
 --- !u!4 &999406711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4134258200348388151, guid: 780064a53a19db14299e356d6bc0cdc2, type: 3}
